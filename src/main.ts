@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module.js';
 import { loadNuxt } from 'nuxt3';
-import { bundle } from '@nuxt/webpack-builder-edge';
+import { buildNuxt } from '@nuxt/kit';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -14,7 +14,7 @@ async function bootstrap() {
 
   // Enable live build & reloading on dev
   if (isDev) {
-    bundle(nuxt)
+    buildNuxt(nuxt)
   }
 
   await app.listen(3001);

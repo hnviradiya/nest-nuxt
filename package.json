@@ -25,7 +25,7 @@
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
-    "@nuxt/webpack-builder-edge": "^3.0.0-27456065.f38cace",
+    "@nuxt/kit": "^0.8.1-edge",
     "nuxt3": "^3.0.0-27456065.f38cace",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
